@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Tailwind CSS -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: "#009DDD",
+                            secondary: "#747474",
+                        },
+                        spacing: {
+                            240: "240px",
+                            40: "40px",
+                        },
+                        maxWidth: {
+                            container: "1440px",
+                            mxcontainer: "1920px",
+                        },
+                        fontFamily: {
+                            barlow: ["'Kumbh Sans', serif"],
+                        },
+                        boxShadow: {
+                            "inner-button":
+                                "inset 0 5px 4px rgba(0, 0, 0, 0.2)",
+                        },
+                    },
+                },
+            };
+        </script>
+
+        <!-- Custom Styles -->
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body class="font-barlow">
+        <div
+            class="max-2xl-container mx-auto relative overflow-hidden bg-no-repeat bg-contain bg-top"
+            style="background-image: url('assets/images/hero-bg.png')"
+        >
+            <!-- vector 1 -->
+            <img
+                src="assets/images/vector1.png"
+                alt="vector"
+                class="absolute top-0 left-0 w-full"
+            />
+            <!-- vector 2 -->
+            <img
+                src="assets/images/vector2.png"
+                alt="vector"
+                class="absolute bottom-0 left-0"
+            />
+            <!-- vector 3 -->
+            <img
+                src="assets/images/vector3.png"
+                alt="vector"
+                class="absolute bottom-36 left-0"
+            />
+            <!-- vector 4 -->
+            <img
+                src="assets/images/vector4.png"
+                alt="vector"
+                class="absolute bottom-24 left-[30%]"
+            />
+            <!-- vector 5 -->
+            <img
+                src="assets/images/vector5.png"
+                alt="vector"
+                class="absolute bottom-1/3 right-0"
+            />
+            <!-- vector 6 -->
+            <img
+                src="assets/images/vector6.png"
+                alt="vector"
+                class="absolute bottom-[43%] right-4"
+            />
+            <!-- Header Section -->
+            <header>
+                <div class="max-w-container mx-auto">
+                    <div class="flex justify-between items-center">
+                        <div class="log">
+                            <img src="assets/images/logo.png" alt="logo" />
+                        </div>
+                        <ul
+                            class="menu flex justify-between items-center gap-8 text-white"
+                        >
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Department & Service</a></li>
+                            <li><a href="">Blogs</a></li>
+                        </ul>
+                        <div class="flex justify-between gap-8">
+                            <a href="contact.html"
+                                ><button
+                                    class="text-white text-sm font-medium border-white border rounded-md px-6 py-2 cursor-pointer"
+                                >
+                                    CONTACT
+                                </button>
+                            </a>
+                            <a href="">
+                                <button
+                                    class="rounded-md text-sm font-medium px-6 py-2 cursor-pointer bg-white"
+                                >
+                                    GET STARTED
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- Hero Section -->
+            <section class="max-w-container mx-auto">
+                <div
+                    class="grid md:grid-cols-2 grid-cols-1 items-center gap-20"
+                >
+                    <div class="left-side-content">
+                        <h1
+                            class="text-[56px] font-bold leading-snug mb-8 text-white"
+                        >
+                            Bombay Maternity & Surgical Hospital
+                        </h1>
+                        <p
+                            class="text-xl leading-normal font-normal border-l-4 border-[#FFD539] ps-8 pe-32 mb-16 text-white"
+                        >
+                            A hospital is a health care institution providing
+                            patient treatment with specialized medical and
+                            nursing staff and medical equipment.
+                        </p>
+                        <a href="#">
+                            <button
+                                class="flex items-center gap-4 rounded-sm font-medium text-md bg-white hover:text-white hover:bg-[#ED3237] hh border-r-4 border-[#FFD539] px-6 py-3"
+                            >
+                                GET STARTED<svg
+                                    width="18"
+                                    height="14"
+                                    viewBox="0 0 18 14"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M1 7H17"
+                                        stroke="#373435"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                    />
+                                    <path
+                                        d="M11 1L17 7L11 13"
+                                        stroke="#373435"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="right-side-content">
+                        <div
+                            class="max-w-[685px] max-h-[769px] clip-path-container"
+                        >
+                            <img
+                                src="assets/images/hero-banner.png"
+                                alt="banner"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- About Section -->
+        <section class="max-w-container mx-auto py-24">
+            <div class="grid md:grid-cols-2 grid-cols-1 items-center">
+                <!-- left side -->
+                <div class="relative flex justify-end">
+                    <div class="max-w-[526px] max-h-[583px]">
+                        <img src="assets/images/about1.png" alt="about" />
+                    </div>
+                    <!-- position image -->
+                    <div
+                        class="absolute left-0 top-1/4 max-w-[328px] max-h-[380px] "
+                    >
+                        <img src="assets/images/about2.png" alt="about" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

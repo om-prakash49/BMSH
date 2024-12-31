@@ -1,0 +1,8 @@
+.max-2xl-container{
+  max-width: 1680px !important;
+}
+
+/* CSS clip-path for a similar shape */
+.clip-path-container {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
