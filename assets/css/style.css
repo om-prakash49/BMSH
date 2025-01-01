@@ -1,8 +1,13 @@
-.max-2xl-container{
-  max-width: 1680px !important;
+.max-2xl-container {
+    max-width: 1620px !important;
 }
 
 /* CSS clip-path for a similar shape */
-.clip-path-container {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+.clip-path-right {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 85% 100%, 0% 100%);
+    overflow: hidden;
+}
+.clip-path-left {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%, 16% 100%, 0% 86%);
+    overflow: hidden;
 }

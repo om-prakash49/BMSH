@@ -19,7 +19,7 @@
                     extend: {
                         colors: {
                             primary: "#009DDD",
-                            secondary: "#747474",
+                            secondary: "#373435",
                         },
                         spacing: {
                             240: "240px",
@@ -139,7 +139,7 @@
                         </p>
                         <a href="#">
                             <button
-                                class="flex items-center gap-4 rounded-sm font-medium text-md bg-white hover:text-white hover:bg-[#ED3237] hh border-r-4 border-[#FFD539] px-6 py-3"
+                                class="flex items-center gap-4 rounded-sm font-medium text-md bg-white hover:text-white hover:bg-[#ED3237] border-r-4 border-[#FFD539] px-6 py-3"
                             >
                                 GET STARTED<svg
                                     width="18"
@@ -166,9 +166,7 @@
                         </a>
                     </div>
                     <div class="right-side-content">
-                        <div
-                            class="max-w-[685px] max-h-[769px] clip-path-container"
-                        >
+                        <div class="max-w-[685px] max-h-[769px] clip-path-left">
                             <img
                                 src="assets/images/hero-banner.png"
                                 alt="banner"
@@ -179,19 +177,230 @@
             </section>
         </div>
         <!-- About Section -->
-        <section class="max-w-container mx-auto py-24">
-            <div class="grid md:grid-cols-2 grid-cols-1 items-center">
+        <section class="relative max-2xl-container mx-auto py-24">
+            <!-- vector 7 -->
+            <img
+                src="assets/images/vector7.png"
+                alt="vector"
+                class="absolute top-0 left-0"
+            />
+            <!-- vector 8 -->
+            <img
+                src="assets/images/vector8.png"
+                alt="vector"
+                class="absolute top-[28%] left-0"
+            />
+            <div class="max-w-container mx-auto">
+                <div
+                    class="grid md:grid-cols-2 grid-cols-1 items-center gap-24"
+                >
+                    <!-- left side -->
+                    <div class="relative flex justify-end">
+                        <div
+                            class="max-w-[526px] max-h-[583px] clip-path-right"
+                        >
+                            <img src="assets/images/about1.png" alt="about" />
+                        </div>
+                        <!-- position image -->
+                        <div
+                            class="absolute left-0 top-1/4 max-w-[328px] max-h-[380px]"
+                        >
+                            <img src="assets/images/about2.png" alt="about" />
+                        </div>
+                    </div>
+                    <!-- left side -->
+                    <div class="ps-14">
+                        <h2 class="text-[44px] font-semibold mb-6">
+                            Who we are
+                        </h2>
+                        <p
+                            class="text-lg leading-normal font-normal text-secondary mb-12"
+                        >
+                            The best-known type of hospital is the general
+                            hospital, which typically has an emergency
+                            department to treat urgent health problems ranging
+                            from fire and accident victims to a heart attack. A
+                            district hospital typically is the major health care
+                            facility in its region, with large numbers of beds
+                            for intensive care and additional beds for patients
+                            who need long-term care. Specialized hospitals can
+                            help reduce health care costs compared to general
+                            hospitals.
+                        </p>
+                        <a href="#">
+                            <button
+                                class="flex items-center gap-4 rounded-sm font-medium text-md transition-all duration-200 ease-in-out hover:bg-white text-white hover:text-black bg-[#ED3237] border-r-4 border-[#FFD539] px-6 py-3"
+                            >
+                                GET STARTED<svg
+                                    width="18"
+                                    height="14"
+                                    viewBox="0 0 18 14"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M1 7H17"
+                                        stroke="#373435"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                    />
+                                    <path
+                                        d="M11 1L17 7L11 13"
+                                        stroke="#373435"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our Promise -->
+        <section
+            class="relative max-2xl-container mx-auto pt-44 pb-24 bg-no-repeat"
+            style="background-image: url('assets/images/ourpromise-bg.png')"
+        >
+            <div
+                class="max-w-container mx-auto grid md:grid-cols-2 grid-cols-1 items-center gap-24"
+            >
                 <!-- left side -->
-                <div class="relative flex justify-end">
-                    <div class="max-w-[526px] max-h-[583px]">
-                        <img src="assets/images/about1.png" alt="about" />
+                <div class="flex flex-wrap gap-8">
+                    <h2 class="text-[44px] font-semibold mb-6">Our Promises</h2>
+                    <!-- list -->
+                    <div class="flex items-center gap-8">
+                        <div class="bg-red-100 p-5 rounded-full">
+                            <svg
+                                width="28"
+                                height="28"
+                                viewBox="0 0 28 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M2.33333 4.66667C2.33333 4.02233 2.85566 3.5 3.49999 3.5H15.1667C15.811 3.5 16.3333 4.02233 16.3333 4.66667V24.5H3.49999C2.85566 24.5 2.33333 23.9777 2.33333 23.3333V4.66667Z"
+                                    stroke="#ED3237"
+                                    stroke-width="2"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M12.25 24.5V19.25C12.25 18.2835 11.4665 17.5 10.5 17.5H8.16667C7.20015 17.5 6.41667 18.2835 6.41667 19.25V24.5"
+                                    stroke="#ED3237"
+                                    stroke-width="2"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M16.3333 14H24.5C25.1443 14 25.6667 14.5223 25.6667 15.1667V23.3333C25.6667 23.9777 25.1443 24.5 24.5 24.5H16.3333V14Z"
+                                    stroke="#ED3237"
+                                    stroke-width="2"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M7 10.5H11.6667"
+                                    stroke="#ED3237"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M19.8333 17.5H22.1667"
+                                    stroke="#ED3237"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M19.8333 21H22.1667"
+                                    stroke="#ED3237"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M9.33333 8.16663V12.8333"
+                                    stroke="#ED3237"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M4.08333 24.5H14.5833"
+                                    stroke="#ED3237"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-[20px] mb-2">
+                                Great Infrastructure
+                            </h4>
+                            <p class="text-secondary pe-32">
+                                Lorem Ipsum is simply dummy text of the printing
+                                industry. It has been the industry's standard
+                                dummy text
+                            </p>
+                        </div>
                     </div>
-                    <!-- position image -->
-                    <div
-                        class="absolute left-0 top-1/4 max-w-[328px] max-h-[380px] "
-                    >
-                        <img src="assets/images/about2.png" alt="about" />
+                    <div class="flex items-center gap-8">
+                        <div class="bg-red-100 p-5 rounded-full">
+                            <svg
+                                width="20"
+                                height="24"
+                                viewBox="0 0 20 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M10.0007 15.4999C14.7602 15.4999 18.6877 19.0626 19.2618 23.6666H0.739578C1.31367 19.0626 5.24114 15.4999 10.0007 15.4999ZM7.88541 18.1593C6.21284 18.6896 4.80409 19.8321 3.93567 21.3333H10.0007L7.88541 18.1593ZM12.1164 18.1596L10.0007 21.3333H16.0657C15.1974 19.8323 13.7889 18.6898 12.1164 18.1596ZM17.0007 0.333252V7.33325C17.0007 11.1992 13.8667 14.3333 10.0007 14.3333C6.13471 14.3333 3.00071 11.1992 3.00071 7.33325V0.333252H17.0007ZM5.33404 7.33325C5.33404 9.91054 7.42338 11.9999 10.0007 11.9999C12.5781 11.9999 14.6674 9.91054 14.6674 7.33325H5.33404ZM14.6674 2.66659H5.33404L5.33391 4.99992H14.6672L14.6674 2.66659Z"
+                                    fill="#ED3237"
+                                />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-[20px] mb-2">
+                                Qualified Doctors
+                            </h4>
+                            <p class="text-secondary pe-32">
+                                Lorem Ipsum is simply dummy text of the printing
+                                industry. It has been the industry's standard
+                                dummy text
+                            </p>
+                        </div>
                     </div>
+                    <div class="flex items-center gap-8">
+                        <div class="bg-red-100 p-5 rounded-full">
+                            <svg
+                                width="26"
+                                height="20"
+                                viewBox="0 0 26 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M19.5849 8.03086L19.9266 7.09107L19.9266 7.09106L19.5849 8.03086ZM23.8151 9.56914L23.4734 10.5089L23.4734 10.5089L23.8151 9.56914ZM5.8 6C5.24772 6 4.8 6.44772 4.8 7C4.8 7.55228 5.24772 8 5.8 8V6ZM10.6 8C11.1523 8 11.6 7.55228 11.6 7C11.6 6.44772 11.1523 6 10.6 6V8ZM9.2 4.6C9.2 4.04772 8.75228 3.6 8.2 3.6C7.64771 3.6 7.2 4.04772 7.2 4.6H9.2ZM7.2 9.4C7.2 9.95228 7.64771 10.4 8.2 10.4C8.75228 10.4 9.2 9.95228 9.2 9.4H7.2ZM4.6 15.6H2.2V17.6H4.6V15.6ZM2.2 15.6C2.08953 15.6 2 15.5105 2 15.4H0C0 16.6151 0.984983 17.6 2.2 17.6V15.6ZM2 15.4V2.2H0V15.4H2ZM2 2.2C2 2.08954 2.08954 2 2.2 2V0C0.984973 0 0 0.984973 0 2.2H2ZM2.2 2H17.2V0H2.2V2ZM17.2 2C17.3105 2 17.4 2.08953 17.4 2.2H19.4C19.4 0.984983 18.4151 0 17.2 0V2ZM17.4 2.2V6.33922H19.4V2.2H17.4ZM17.4 6.33922C17.4 7.51661 18.1366 8.56829 19.2432 8.97066L19.9266 7.09106C19.6105 6.97611 19.4 6.67563 19.4 6.33922H17.4ZM19.2431 8.97065L23.4734 10.5089L24.1569 8.62935L19.9266 7.09107L19.2431 8.97065ZM23.4734 10.5089C23.7895 10.6239 24 10.9244 24 11.2608H26C26 10.0834 25.2634 9.03171 24.1568 8.62934L23.4734 10.5089ZM24 11.2608V15.4H26V11.2608H24ZM24 15.4C24 15.5105 23.9105 15.6 23.8 15.6V17.6C25.015 17.6 26 16.615 26 15.4H24ZM23.8 15.6H21.4V17.6H23.8V15.6ZM9.4 17.6H16.6V15.6H9.4V17.6ZM5.8 8H10.6V6H5.8V8ZM7.2 4.6V9.4H9.2V4.6H7.2ZM8.4 16.6C8.4 17.3732 7.7732 18 7 18V20C8.87777 20 10.4 18.4778 10.4 16.6H8.4ZM7 18C6.2268 18 5.6 17.3732 5.6 16.6H3.6C3.6 18.4778 5.12223 20 7 20V18ZM5.6 16.6C5.6 15.8268 6.2268 15.2 7 15.2V13.2C5.12223 13.2 3.6 14.7222 3.6 16.6H5.6ZM7 15.2C7.7732 15.2 8.4 15.8268 8.4 16.6H10.4C10.4 14.7222 8.87777 13.2 7 13.2V15.2ZM20.4 16.6C20.4 17.3732 19.7732 18 19 18V20C20.8778 20 22.4 18.4778 22.4 16.6H20.4ZM19 18C18.2268 18 17.6 17.3732 17.6 16.6H15.6C15.6 18.4778 17.1222 20 19 20V18ZM17.6 16.6C17.6 15.8268 18.2268 15.2 19 15.2V13.2C17.1222 13.2 15.6 14.7222 15.6 16.6H17.6ZM19 15.2C19.7732 15.2 20.4 15.8268 20.4 16.6H22.4C22.4 14.7222 20.8778 13.2 19 13.2V15.2Z"
+                                    fill="#ED3237"
+                                />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-[20px] mb-2">
+                                Emergency Departments
+                            </h4>
+                            <p class="text-secondary pe-32">
+                                Lorem Ipsum is simply dummy text of the printing
+                                industry. It has been the industry's standard
+                                dummy text
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- right side -->
+                <div class="max-w-[685px] max-h-[769px] clip-path-left">
+                    <img src="assets/images/ourPromise.png" alt="banner" />
                 </div>
             </div>
         </section>
