@@ -18,7 +18,7 @@
                 theme: {
                     extend: {
                         colors: {
-                            primary: "#009DDD",
+                            primary: "#373435",
                             secondary: "#373435",
                         },
                         spacing: {
@@ -41,12 +41,30 @@
             };
         </script>
 
+        <!-- Slick CSS -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        />
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- js -->
+        <script src="assets/js/service.js"></script>
+
         <!-- Custom Styles -->
         <link rel="stylesheet" href="assets/css/style.css" />
     </head>
     <body class="font-barlow">
         <div
-            class="max-2xl-container mx-auto relative overflow-hidden bg-no-repeat bg-contain bg-top"
+            class="max-2xl-container mx-auto relative overflow-hidden bg-no-repeat bg-cover bg-top"
             style="background-image: url('assets/images/hero-bg.png')"
         >
             <!-- vector 1 -->
@@ -210,11 +228,11 @@
                     </div>
                     <!-- left side -->
                     <div class="ps-14">
-                        <h2 class="text-[44px] font-semibold mb-6">
+                        <h2 class="text-[44px] text-primary font-semibold mb-6">
                             Who we are
                         </h2>
                         <p
-                            class="text-lg leading-normal font-normal text-secondary mb-12"
+                            class="text-lg leading-normal font-normal text-primary mb-12"
                         >
                             The best-known type of hospital is the general
                             hospital, which typically has an emergency
@@ -260,15 +278,35 @@
         </section>
         <!-- Our Promise -->
         <section
-            class="relative max-2xl-container mx-auto pt-44 pb-24 bg-no-repeat"
+            class="relative max-2xl-container mx-auto pt-44 pb-24 bg-no-repeat bg-cover"
             style="background-image: url('assets/images/ourpromise-bg.png')"
         >
+            <!-- vector 9 -->
+            <img
+                src="assets/images/vector9.png"
+                alt="vector"
+                class="absolute -top-20 right-0"
+            />
+            <!-- vector 10 -->
+            <img
+                src="assets/images/vector10.png"
+                alt="vector"
+                class="absolute -top-28 right-0"
+            />
+            <!-- vector 11 -->
+            <img
+                src="assets/images/vector11.png"
+                alt="vector"
+                class="absolute bottom-0 left-0"
+            />
             <div
                 class="max-w-container mx-auto grid md:grid-cols-2 grid-cols-1 items-center gap-24"
             >
                 <!-- left side -->
                 <div class="flex flex-wrap gap-8">
-                    <h2 class="text-[44px] font-semibold mb-6">Our Promises</h2>
+                    <h2 class="text-[44px] text-primary font-semibold mb-6">
+                        Our Promises
+                    </h2>
                     <!-- list -->
                     <div class="flex items-center gap-8">
                         <div class="bg-red-100 p-5 rounded-full">
@@ -338,7 +376,7 @@
                             <h4 class="font-semibold text-[20px] mb-2">
                                 Great Infrastructure
                             </h4>
-                            <p class="text-secondary pe-32">
+                            <p class="text-primary pe-32">
                                 Lorem Ipsum is simply dummy text of the printing
                                 industry. It has been the industry's standard
                                 dummy text
@@ -361,10 +399,12 @@
                             </svg>
                         </div>
                         <div>
-                            <h4 class="font-semibold text-[20px] mb-2">
+                            <h4
+                                class="font-semibold text-primary text-[20px] mb-2"
+                            >
                                 Qualified Doctors
                             </h4>
-                            <p class="text-secondary pe-32">
+                            <p class="text-primary pe-32">
                                 Lorem Ipsum is simply dummy text of the printing
                                 industry. It has been the industry's standard
                                 dummy text
@@ -387,10 +427,12 @@
                             </svg>
                         </div>
                         <div>
-                            <h4 class="font-semibold text-[20px] mb-2">
+                            <h4
+                                class="font-semibold text-primary text-[20px] mb-2"
+                            >
                                 Emergency Departments
                             </h4>
-                            <p class="text-secondary pe-32">
+                            <p class="text-primary pe-32">
                                 Lorem Ipsum is simply dummy text of the printing
                                 industry. It has been the industry's standard
                                 dummy text
@@ -399,10 +441,132 @@
                     </div>
                 </div>
                 <!-- right side -->
-                <div class="max-w-[685px] max-h-[769px] clip-path-left">
+                <div class="max-w-[685px] max-h-[577px] clip-path-left">
                     <img src="assets/images/ourPromise.png" alt="banner" />
                 </div>
             </div>
         </section>
+        <!-- Department And Services -->
+        <!-- Department And Services -->
+        <section class="max-2xl-container mx-auto my-10 px-4">
+            <h2 class="text-4xl font-semibold text-center mb-6">
+                Department and Services
+            </h2>
+            <div class="multiple-items">
+                <!-- Slide 1 -->
+                <div class="bg-white shadow-md max-h-[380px] p-6 m-4">
+                    <img
+                        src="assets/images/service1.png"
+                        alt="General Surgery"
+                        class="w-full max-h-[203px] mb-4 clip-path-right"
+                    />
+                    <h3 class="text-xl text-primary font-semibold mb-2 px-1">
+                        General Surgery
+                    </h3>
+                    <p class="text-primary px-1">
+                        Lorem Ipsum is simply dummy text of the printing
+                        industry. It has been the industry's standard dummy text
+                    </p>
+                </div>
+                <!-- Slide 2 -->
+                <div
+                    class="bg-white text-primary shadow-md max-h-[380px] p-6 m-4"
+                >
+                    <img
+                        src="assets/images/service2.png"
+                        alt="General Surgery"
+                        class="w-full max-h-[203px] mb-4 clip-path-right"
+                    />
+                    <h3 class="text-xl font-semibold mb-2">
+                        Ear, Nose and Throat
+                    </h3>
+                    <p class="text-primary">
+                        Lorem Ipsum is simply dummy text of the printing
+                        industry. It has been the industry's standard dummy text
+                    </p>
+                </div>
+                <!-- Slide 3 -->
+                <div
+                    class="bg-white text-primary shadow-md max-h-[380px] p-6 m-4"
+                >
+                    <img
+                        src="assets/images/service3.png"
+                        alt="General Surgery"
+                        class="w-full max-h-[203px] mb-4 clip-path-right"
+                    />
+                    <h3 class="text-xl font-semibold mb-2">
+                        Obstetric & Gynecology
+                    </h3>
+                    <p class="text-primary">
+                        Lorem Ipsum is simply dummy text of the printing
+                        industry. It has been the industry's standard dummy text
+                    </p>
+                </div>
+                <!-- Slide 4 -->
+                <div
+                    class="bg-white text-primary shadow-md max-h-[380px] p-6 m-4"
+                >
+                    <img
+                        src="assets/images/service4.png"
+                        alt="General Surgery"
+                        class="w-full max-h-[203px] mb-4 clip-path-right"
+                    />
+                    <h3 class="text-xl font-semibold mb-2">
+                        Orthopedic & Joint Replace
+                    </h3>
+                    <p class="text-primary">
+                        Lorem Ipsum is simply dummy text of the printing
+                        industry. It has been the industry's standard dummy text
+                    </p>
+                </div>
+                <!-- Slide 3 -->
+                <div
+                    class="bg-white text-primary shadow-md max-h-[380px] p-6 m-4"
+                >
+                    <img
+                        src="assets/images/service3.png"
+                        alt="General Surgery"
+                        class="w-full max-h-[203px] mb-4 clip-path-right"
+                    />
+                    <h3 class="text-xl font-semibold mb-2">
+                        Obstetric & Gynecology
+                    </h3>
+                    <p class="text-primary">
+                        Lorem Ipsum is simply dummy text of the printing
+                        industry. It has been the industry's standard dummy text
+                    </p>
+                </div>
+                <!-- Slide 4 -->
+                <div class="bg-white shadow-md max-h-[380px] p-6 m-4">
+                    <img
+                        src="assets/images/service4.png"
+                        alt="General Surgery"
+                        class="w-full max-h-[203px] mb-4 clip-path-right"
+                    />
+                    <h3 class="text-xl text-primary font-semibold mb-2">
+                        Orthopedic & Joint Replace
+                    </h3>
+                    <p class="text-primary">
+                        Lorem Ipsum is simply dummy text of the printing
+                        industry. It has been the industry's standard dummy text
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- partners section -->
+        <section class="max-w-container mx-auto">
+            <div class="text-center">
+                <h4
+                    class="text-primary font-semibold tracking-widest border-primary border-b-2 mb-4 pb-1 inline-block"
+                >
+                    PARTNERS
+                </h4>
+            </div>
+        </section>
     </body>
+    <!-- Slick JS -->
+    <script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
 </html>
