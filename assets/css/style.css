@@ -27,3 +27,36 @@
   right: -40px; /* Adjust this value to move the button inside or outside */
 }
 
+.priority-slider-wrapper {
+  overflow: hidden !important;
+  width: 100% !important;
+  position: relative !important;
+}
+
+.priority-cards {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+}
+
+.research {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.research {
+  overflow: hidden; /* Ensures content outside the container is hidden */
+  display: flex;
+  flex-wrap: nowrap; /* Prevents wrapping of slides */
+  position: relative; /* To keep child elements positioned relative to the container */
+}
+
+.research > div {
+  flex: 0 0 calc(25% - 16px); /* Each card takes up 25% of the container width */
+  margin-right: 16px; /* Adjust for spacing between cards */
+  box-sizing: border-box;
+}
+
+
+
+
