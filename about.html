@@ -109,7 +109,142 @@
                 class="absolute bottom-1/2 right-0"
             />
             <!-- Header Section -->
-            <div id="header-placeholder"></div>
+            <!-- Header Section -->
+            <header class="relative z-10">
+                <div class="max-w-container mx-auto px-4">
+                    <div class="flex justify-between items-center">
+                        <div class="log">
+                            <img src="assets/images/logo.png" alt="logo" />
+                        </div>
+                        <ul
+                        class="menu lg:flex hidden justify-between items-center gap-8 text-white"
+                    >
+                        <li>
+                            <a href="index.html" class="cursor-pointer">Home</a>
+                        </li>
+                        <li><a href="about.html">About</a></li>
+                        <div class="relative group cursor-pointer">
+                            <li class="flex items-center gap-2">
+                                <a href="department.html">Department & Service</a>
+                                <svg
+                                    width="14"
+                                    height="14"
+                                    viewBox="0 0 14 14"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M2 5L7 10L12 5"
+                                        stroke="white"
+                                        stroke-width="1.5"
+                                    />
+                                </svg>
+                            </li>
+                            <div
+                                class="absolute top-[2rem] left-0 w-64 px-3 py-6 space-y-2 hidden group-hover:flex group-hover:flex-col shadow-lg z-10 bg-white opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out transform origin-top"
+                            >
+                                <a
+                                    href="chairmans-message.html"
+                                    class="block px-4 py-2 relative after:content-[''] text-primary after:absolute after:left-4 after:bottom-0 after:w-0 after:h-0.5 after:bg-slate-900 after:transition-all after:duration-300 hover:after:w-14"
+                                >
+                                    Orthopedic
+                                </a>
+                                <a
+                                    href="services.html"
+                                    class="block px-4 py-2 relative after:content-[''] text-primary after:absolute after:left-4 after:bottom-0 after:w-0 after:h-0.5 after:bg-slate-900 after:transition-all after:duration-300 hover:after:w-14"
+                                >
+                                    Cardiology
+                                </a>
+                            </div>
+                        </div>
+                        <li><a href="blog.html">Blogs</a></li>
+                    </ul>
+                    
+                        <div class="lg:flex hidden justify-between gap-8">
+                            <a href="contact.html"
+                                ><button
+                                    class="text-white text-sm font-medium border-white border rounded-md px-6 py-2 cursor-pointer"
+                                >
+                                    CONTACT
+                                </button>
+                            </a>
+                            <a href="">
+                                <button
+                                    class="rounded-md text-sm font-medium px-6 py-2 cursor-pointer bg-white"
+                                >
+                                    GET STARTED
+                                </button>
+                            </a>
+                        </div>
+                        <!-- Hamburger Menu Button -->
+                        <button
+                            id="menu-button"
+                            class="lg:hidden flex items-center justify-center w-12 h-12 rounded-full border border-white relative z-50"
+                        >
+                            <svg
+                                width="20"
+                                height="18"
+                                viewBox="0 0 20 18"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M19.75 0.333332H0.25V2.5H19.75V0.333332ZM19.75 7.91667H6.25V10.0833H19.75V7.91667ZM19.75 15.5H0.25V17.6667H19.75V15.5Z"
+                                    fill="white"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- Off-canvas Menu -->
+                <div
+                    id="offcanvas-menu"
+                    class="fixed z-[99] h-screen top-0 left-0 w-[100%] rounded-bl-[7rem] bg-gray-50 shadow-lg transform translate-x-full transition-transform duration-300"
+                >
+                    <div class="bg-[#4534AF] h-screen p-6">
+                        <button
+                            id="close-menu"
+                            class="text-primary text-xl float-right mb-4"
+                        >
+                            <i class="fa-solid fa-xmark text-white"></i>
+                        </button>
+                        <ul class="space-y-4">
+                            <li>
+                                <a href="index.html" class="text-white">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html" class="text-white"
+                                    >About</a
+                                >
+                            </li>
+                            <li>
+                                <a href="department.html" class="text-white"
+                                    >Department & Service</a
+                                >
+                            </li>
+                            <li>
+                                <a href="blog.html" class="text-white">Blogs</a>
+                            </li>
+                        </ul>
+                        <div class="mt-6 space-y-4">
+                            <a href="contact.html"
+                                ><button
+                                    class="text-white w-full text-sm font-medium border-white border rounded-md px-6 py-2 cursor-pointer mb-4"
+                                >
+                                    CONTACT
+                                </button>
+                            </a>
+                            <a href="#">
+                                <button
+                                    class="rounded-md w-full text-sm font-medium px-6 py-2 cursor-pointer bg-white"
+                                >
+                                    GET STARTED
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
             <!-- breadcrumb content-->
             <div class="text-center pt-12 pb-36">
                 <h2 class="font-semibold text-white text-[44px]">About Us</h2>
@@ -140,7 +275,7 @@
             </div>
         </div>
         <!-- About Section -->
-        <section class="relative z-10 max-2xl-container mx-auto pt-24">
+        <section class="relative z-10 max-2xl-container mx-auto xl:pt-24 px-4">
             <!-- vector 7 -->
             <img
                 src="assets/images/vector7.png"
@@ -155,11 +290,11 @@
             />
             <div class="max-w-container mx-auto">
                 <div
-                    class="grid md:grid-cols-2 grid-cols-1 items-center gap-24"
+                    class="grid xl:grid-cols-2 grid-cols-1 items-center gap-24"
                 >
                     <!-- left side -->
-                    <div class="ps-14">
-                        <h2 class="text-[44px] text-primary font-semibold mb-6">
+                    <div class="xl:ps-14">
+                        <h2 class="lg:text-[44px] text-3xl text-primary font-semibold mb-6">
                             Know more about BMSH
                         </h2>
                         <p
@@ -204,17 +339,17 @@
                     </div>
                     <!-- right side -->
                     <div class="relative flex justify-end">
-                        <div class="max-w-[526px] max-h-[583px]">
+                        <div class="md:w-[526px] md:h-[583px] w-[300px]">
                             <img
                                 src="assets/images/about/about1.png"
                                 alt="about"
                             />
-                        </div>
-                        <!-- position image -->
-                        <div
-                            class="absolute left-0 top-1/4 max-w-[328px] max-h-[380px] clip-path-right"
+                            <!-- position image -->
+                            <div
+                            class="absolute xl:left-0 lg:left-1/3 left-0 top-1/4 md:w-[328px] md:h-[380px] w-[200px]"
                         >
-                            <img src="assets/images/about2.png" alt="about" />
+                                <img src="assets/images/about2.png" alt="about" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -222,27 +357,27 @@
         </section>
         <!-- you tube -->
         <section
-            class="max-2xl-container mx-auto relative py-36 overflow-hidden bg-no-repeat bg-cover bg-top"
+            class="max-2xl-container mx-auto relative lg:py-36 py-16 overflow-hidden bg-no-repeat bg-cover bg-top px-4"
             style="background-image: url('assets/images/about/about-bg.png')"
         >
             <!-- vector 1 -->
             <img
                 src="assets/images/about/vector1.png"
                 alt="vector"
-                class="absolute top-36 left-0"
+                class="absolute top-36 left-0 -z-10"
             />
             <!-- vector 2 -->
             <img
                 src="assets/images/about/vector2.png"
                 alt="vector"
-                class="absolute top-36 right-0"
+                class="absolute top-36 right-0 -z-10"
             />
             <div class="flex flex-col justify-center">
-                <h2 class="text-4xl font-semibold text-center mb-6">
+                <h2 class="lg:text-4xl text-3xl font-semibold text-center mb-6">
                     Lorem Ipsum is simply dummy text
                 </h2>
                 <p
-                    class="text-primary font-normal leading-relaxed text-center md:w-1/2 mx-auto md:px-8"
+                    class="text-primary font-normal leading-relaxed text-center xl:w-1/2 mx-auto md:px-8"
                 >
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
@@ -386,7 +521,7 @@
         </section>
         <!-- Our mission Section -->
         <section
-            class="max-2xl-container mx-auto relative pt-36 pb-44 overflow-hidden bg-no-repeat bg-cover bg-top"
+            class="max-2xl-container mx-auto relative pt-36 pb-44 overflow-hidden bg-no-repeat bg-cover bg-top px-4"
             style="background-image: url('assets/images/about/about-bg.png')"
         >
             <!-- vector 9 -->
@@ -403,11 +538,11 @@
             />
             <div class="max-w-container mx-auto">
                 <div
-                    class="grid md:grid-cols-2 grid-cols-1 items-center gap-24"
+                    class="grid lg:grid-cols-2 grid-cols-1 items-center gap-24"
                 >
                     <!-- left side -->
-                    <div class="ps-14">
-                        <h2 class="text-[44px] text-primary font-semibold mb-6">
+                    <div class="xl:ps-14">
+                        <h2 class="lg:text-[44px] text-3xl text-primary font-semibold mb-6">
                             Our Mission
                         </h2>
                         <p
@@ -460,78 +595,80 @@
                 </div>
             </div>
         </section>
-        <!-- partners section -->
-        <section
-            class="max-2xl-container mx-auto border-b border-gray-300 py-16"
-        >
-            <div class="text-center">
-                <h4
-                    class="text-primary font-semibold tracking-widest border-primary border-b-2 mb-4 pb-1 inline-block"
-                >
-                    PARTNERS
-                </h4>
-            </div>
-            <div class="grid grid-cols-8 justify-between items-center py-6">
-                <div class="flex justify-center">
-                    <img
-                        src="assets/images/patner1.png"
-                        alt="patner"
-                        class="max-w-[132px] max-h-[110px] grayscale hover:grayscale-0 transition-all duration-300"
-                    />
-                </div>
-                <div class="flex justify-center">
-                    <img
-                        src="assets/images/patner2.png"
-                        alt="patner"
-                        class="max-w-[132px] max-h-[110px] grayscale hover:grayscale-0 transition-all duration-300"
-                    />
-                </div>
-                <div class="flex justify-center">
-                    <img
-                        src="assets/images/patner3.png"
-                        alt="patner"
-                        class="max-w-[132px] max-h-[110px] grayscale hover:grayscale-0 transition-all duration-300"
-                    />
-                </div>
-                <div class="flex justify-center">
-                    <img
-                        src="assets/images/patner4.png"
-                        alt="patner"
-                        class="max-w-[132px] max-h-[110px] grayscale hover:grayscale-0 transition-all duration-300"
-                    />
-                </div>
-                <div class="flex justify-center">
-                    <img
-                        src="assets/images/patner5.png"
-                        alt="patner"
-                        class="max-w-[132px] max-h-[110px] grayscale hover:grayscale-0 transition-all duration-300"
-                    />
-                </div>
-                <div class="flex justify-center">
-                    <img
-                        src="assets/images/patner6.png"
-                        alt="patner"
-                        class="max-w-[132px] max-h-[110px] grayscale hover:grayscale-0 transition-all duration-300"
-                    />
-                </div>
-                <div class="flex justify-center">
-                    <img
-                        src="assets/images/patner7.png"
-                        alt="patner"
-                        class="max-w-[132px] max-h-[110px] grayscale hover:grayscale-0 transition-all duration-300"
-                    />
-                </div>
-                <div class="flex justify-center">
-                    <img
-                        src="assets/images/patner8.png"
-                        alt="patner"
-                        class="max-w-[132px] max-h-[110px] grayscale hover:grayscale-0 transition-all duration-300"
-                    />
-                </div>
-            </div>
-        </section>
-        <!-- Research -->
-        <section
+       <!-- partners section -->
+       <section
+       class="max-2xl-container mx-auto border-t border-gray-300 py-16 px-4"
+   >
+       <div class="text-center">
+           <h4
+               class="text-primary font-semibold tracking-widest border-primary border-b-2 mb-4 pb-1 inline-block"
+           >
+               PARTNERS
+           </h4>
+       </div>
+       <div
+           class="grid xl:grid-cols-8 lg:grid-cols-6 md:grid-cols-3 grid-cols-2 justify-between items-center py-6"
+       >
+           <div class="flex justify-center">
+               <img
+                   src="assets/images/patner1.png"
+                   alt="patner"
+                   class="max-w-[132px] max-h-[110px] grayscale hover:grayscale-0 transition-all duration-300"
+               />
+           </div>
+           <div class="flex justify-center">
+               <img
+                   src="assets/images/patner2.png"
+                   alt="patner"
+                   class="max-w-[132px] max-h-[110px] grayscale hover:grayscale-0 transition-all duration-300"
+               />
+           </div>
+           <div class="flex justify-center">
+               <img
+                   src="assets/images/patner3.png"
+                   alt="patner"
+                   class="max-w-[132px] max-h-[110px] grayscale hover:grayscale-0 transition-all duration-300"
+               />
+           </div>
+           <div class="flex justify-center">
+               <img
+                   src="assets/images/patner4.png"
+                   alt="patner"
+                   class="max-w-[132px] max-h-[110px] grayscale hover:grayscale-0 transition-all duration-300"
+               />
+           </div>
+           <div class="flex justify-center">
+               <img
+                   src="assets/images/patner5.png"
+                   alt="patner"
+                   class="max-w-[132px] max-h-[110px] grayscale hover:grayscale-0 transition-all duration-300"
+               />
+           </div>
+           <div class="flex justify-center">
+               <img
+                   src="assets/images/patner6.png"
+                   alt="patner"
+                   class="max-w-[132px] max-h-[110px] grayscale hover:grayscale-0 transition-all duration-300"
+               />
+           </div>
+           <div class="flex justify-center">
+               <img
+                   src="assets/images/patner7.png"
+                   alt="patner"
+                   class="max-w-[132px] max-h-[110px] grayscale hover:grayscale-0 transition-all duration-300"
+               />
+           </div>
+           <div class="flex justify-center">
+               <img
+                   src="assets/images/patner8.png"
+                   alt="patner"
+                   class="max-w-[132px] max-h-[110px] grayscale hover:grayscale-0 transition-all duration-300"
+               />
+           </div>
+       </div>
+   </section>
+            <!-- Research -->
+            <section
             class="relative max-2xl-container mx-auto pt-44 pb-24 bg-no-repeat"
         >
             <!-- vector -->
@@ -544,17 +681,18 @@
                 <h2 class="text-4xl font-semibold text-center mb-8">
                     Latest Insights and Research
                 </h2>
-                <div class="research grid grid-cols-4">
+                <div class="research ">
                     <!-- card 1 -->
                     <div
-                        class="hover:bg-white hover:shadow-xl transition-all duration-300 ease-in-out p-6"
+                        class="hover:bg-white hover:shadow-xl transition-all duration-300 ease-in-out p-6 mx-4"
                     >
                         <div
-                            class="max-w-[328px] max-h-[261px] mb-4 clip-path-right"
+                            class="lg:max-w-[328px] w-full max-h-[261px] mb-4 clip-path-right"
                         >
                             <img
                                 src="assets/images/research1.png"
                                 alt="Research"
+                                class="w-full"
                             />
                         </div>
                         <p class="text-secondary text-sm mb-4">
@@ -594,14 +732,15 @@
                     </div>
                     <!-- card 2 -->
                     <div
-                        class="hover:bg-white hover:shadow-xl transition-all duration-300 ease-in-out p-6"
+                        class="hover:bg-white hover:shadow-xl transition-all duration-300 ease-in-out p-6 mx-4"
                     >
                         <div
-                            class="max-w-[328px] max-h-[261px] mb-4 clip-path-right"
+                            class="lg:max-w-[328px] w-full max-h-[261px] mb-4 clip-path-right"
                         >
                             <img
                                 src="assets/images/research2.png"
                                 alt="Research"
+                                class="w-full"
                             />
                         </div>
                         <p class="text-secondary text-sm mb-4">
@@ -641,14 +780,15 @@
                     </div>
                     <!-- card 3 -->
                     <div
-                        class="hover:bg-white hover:shadow-xl transition-all duration-300 ease-in-out p-6"
+                        class="hover:bg-white hover:shadow-xl transition-all duration-300 ease-in-out p-6 mx-4"
                     >
                         <div
-                            class="max-w-[328px] max-h-[261px] mb-4 clip-path-right"
+                            class="lg:max-w-[328px] w-full max-h-[261px] mb-4 clip-path-right"
                         >
                             <img
                                 src="assets/images/research3.png"
                                 alt="Research"
+                                class="w-full"
                             />
                         </div>
                         <p class="text-secondary text-sm mb-4">
@@ -688,14 +828,207 @@
                     </div>
                     <!-- card 4 -->
                     <div
-                        class="hover:bg-white hover:shadow-xl transition-all duration-300 ease-in-out p-6"
+                        class="hover:bg-white hover:shadow-xl transition-all duration-300 ease-in-out p-6 mx-4"
                     >
                         <div
-                            class="max-w-[328px] max-h-[261px] mb-4 clip-path-right"
+                            class="lg:max-w-[328px] w-full max-h-[261px] mb-4 clip-path-right"
                         >
                             <img
                                 src="assets/images/research4.png"
                                 alt="Research"
+                                class="w-full"
+                            />
+                        </div>
+                        <p class="text-secondary text-sm mb-4">
+                            <span class="font-medium">22 Feb, 2022</span>
+                            <span class="font-light">by Mark Devid</span>
+                        </p>
+                        <p class="text-primary font-medium md:w-2/3 mb-4">
+                            It is a long established fact that a reader will be
+                            distracted.
+                        </p>
+                        <a
+                            href="#"
+                            class="cursor-pointer text-sm font-medium tracking-widest text-[#ED3237] border-b border-[#ED3237] pb-1 inline-block"
+                            ><span class="flex items-center gap-2"
+                                >READ MORE
+                                <svg
+                                    width="14"
+                                    height="9"
+                                    viewBox="0 0 14 9"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M0.5 4.5H12.5"
+                                        stroke="#ED3237"
+                                        stroke-linecap="round"
+                                    />
+                                    <path
+                                        d="M8.83333 0.5L12.8333 4.5L8.83333 8.5"
+                                        stroke="#ED3237"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                    <!-- card 1 -->
+                    <div
+                        class="hover:bg-white hover:shadow-xl transition-all duration-300 ease-in-out p-6 mx-4"
+                    >
+                        <div
+                            class="lg:max-w-[328px] w-full max-h-[261px] mb-4 clip-path-right"
+                        >
+                            <img
+                                src="assets/images/research1.png"
+                                alt="Research"
+                                class="w-full"
+                            />
+                        </div>
+                        <p class="text-secondary text-sm mb-4">
+                            <span class="font-medium">22 Feb, 2022</span>
+                            <span class="font-light">by Mark Devid</span>
+                        </p>
+                        <p class="text-primary font-medium md:w-2/3 mb-4">
+                            It is a long established fact that a reader will be
+                            distracted.
+                        </p>
+                        <a
+                            href="#"
+                            class="cursor-pointer text-sm font-medium tracking-widest text-[#ED3237] border-b border-[#ED3237] pb-1 inline-block"
+                            ><span class="flex items-center gap-2"
+                                >READ MORE
+                                <svg
+                                    width="14"
+                                    height="9"
+                                    viewBox="0 0 14 9"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M0.5 4.5H12.5"
+                                        stroke="#ED3237"
+                                        stroke-linecap="round"
+                                    />
+                                    <path
+                                        d="M8.83333 0.5L12.8333 4.5L8.83333 8.5"
+                                        stroke="#ED3237"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                    <!-- card 2 -->
+                    <div
+                        class="hover:bg-white hover:shadow-xl transition-all duration-300 ease-in-out p-6 mx-4"
+                    >
+                        <div
+                            class="lg:max-w-[328px] w-full max-h-[261px] mb-4 clip-path-right"
+                        >
+                            <img
+                                src="assets/images/research2.png"
+                                alt="Research"
+                                class="w-full"
+                            />
+                        </div>
+                        <p class="text-secondary text-sm mb-4">
+                            <span class="font-medium">22 Feb, 2022</span>
+                            <span class="font-light">by Mark Devid</span>
+                        </p>
+                        <p class="text-primary font-medium md:w-2/3 mb-4">
+                            It is a long established fact that a reader will be
+                            distracted.
+                        </p>
+                        <a
+                            href="#"
+                            class="cursor-pointer text-sm font-medium tracking-widest text-[#ED3237] border-b border-[#ED3237] pb-1 inline-block"
+                            ><span class="flex items-center gap-2"
+                                >READ MORE
+                                <svg
+                                    width="14"
+                                    height="9"
+                                    viewBox="0 0 14 9"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M0.5 4.5H12.5"
+                                        stroke="#ED3237"
+                                        stroke-linecap="round"
+                                    />
+                                    <path
+                                        d="M8.83333 0.5L12.8333 4.5L8.83333 8.5"
+                                        stroke="#ED3237"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                    <!-- card 3 -->
+                    <div
+                        class="hover:bg-white hover:shadow-xl transition-all duration-300 ease-in-out p-6 mx-4"
+                    >
+                        <div
+                            class="lg:max-w-[328px] w-full max-h-[261px] mb-4 clip-path-right"
+                        >
+                            <img
+                                src="assets/images/research3.png"
+                                alt="Research"
+                                class="w-full"
+                            />
+                        </div>
+                        <p class="text-secondary text-sm mb-4">
+                            <span class="font-medium">22 Feb, 2022</span>
+                            <span class="font-light">by Mark Devid</span>
+                        </p>
+                        <p class="text-primary font-medium md:w-2/3 mb-4">
+                            It is a long established fact that a reader will be
+                            distracted.
+                        </p>
+                        <a
+                            href="#"
+                            class="cursor-pointer text-sm font-medium tracking-widest text-[#ED3237] border-b border-[#ED3237] pb-1 inline-block"
+                            ><span class="flex items-center gap-2"
+                                >READ MORE
+                                <svg
+                                    width="14"
+                                    height="9"
+                                    viewBox="0 0 14 9"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M0.5 4.5H12.5"
+                                        stroke="#ED3237"
+                                        stroke-linecap="round"
+                                    />
+                                    <path
+                                        d="M8.83333 0.5L12.8333 4.5L8.83333 8.5"
+                                        stroke="#ED3237"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                    <!-- card 4 -->
+                    <div
+                        class="hover:bg-white hover:shadow-xl transition-all duration-300 ease-in-out p-6 mx-4"
+                    >
+                        <div
+                            class="lg:max-w-[328px] w-full max-h-[261px] mb-4 clip-path-right"
+                        >
+                            <img
+                                src="assets/images/research4.png"
+                                alt="Research"
+                                class="w-full"
                             />
                         </div>
                         <p class="text-secondary text-sm mb-4">
@@ -743,6 +1076,25 @@
         >
             <div id="footer-placeholder"></div>
         </footer>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const menuButton = document.getElementById("menu-button");
+                const closeMenu = document.getElementById("close-menu");
+                const offcanvasMenu = document.getElementById("offcanvas-menu");
+
+                // Toggle menu open
+                menuButton.addEventListener("click", () => {
+                    offcanvasMenu.classList.remove("translate-x-full"); // Remove the class to show the menu
+                    offcanvasMenu.classList.add("translate-x-0"); // Add this class for visibility
+                });
+
+                // Toggle menu close
+                closeMenu.addEventListener("click", () => {
+                    offcanvasMenu.classList.remove("translate-x-0"); // Remove the visible class
+                    offcanvasMenu.classList.add("translate-x-full"); // Add this class to hide the menu
+                });
+            });
+        </script>
     </body>
     <!-- Slick JS -->
     <script

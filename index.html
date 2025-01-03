@@ -59,6 +59,15 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
         />
 
+        <!-- fontawsom -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -67,66 +76,205 @@
         <script src="assets/js/priority.js"></script>
         <script src="assets/js/research.js"></script>
         <script src="assets/js/app.js"></script>
+        <script src="assets/js/footer.js"></script>
 
         <!-- Custom Styles -->
         <link rel="stylesheet" href="assets/css/style.css" />
     </head>
     <body class="font-barlow">
         <div
-            class="max-2xl-container mx-auto relative  overflow-hidden bg-no-repeat bg-cover bg-top"
+            class="max-2xl-container mx-auto relative overflow-hidden bg-no-repeat bg-cover bg-top"
             style="background-image: url('assets/images/hero-bg.png')"
         >
             <!-- vector 1 -->
             <img
                 src="assets/images/vector1.png"
                 alt="vector"
-                class="absolute top-0 left-0 w-full -z-10"
+                class="absolute top-0 left-0 w-full "
             />
             <!-- vector 2 -->
             <img
                 src="assets/images/vector2.png"
                 alt="vector"
-                class="absolute bottom-0 left-0 -z-10"
+                class="absolute bottom-0 left-0 "
             />
             <!-- vector 3 -->
             <img
                 src="assets/images/vector3.png"
                 alt="vector"
-                class="absolute bottom-36 left-0 -z-10"
+                class="absolute bottom-36 left-0 "
             />
             <!-- vector 4 -->
             <img
                 src="assets/images/vector4.png"
                 alt="vector"
-                class="absolute bottom-24 left-[30%] -z-10"
+                class="absolute bottom-24 left-[30%] "
             />
             <!-- vector 5 -->
             <img
                 src="assets/images/vector5.png"
                 alt="vector"
-                class="absolute bottom-1/3 right-0 -z-10"
+                class="absolute bottom-1/3 right-0 "
             />
             <!-- vector 6 -->
             <img
                 src="assets/images/vector6.png"
                 alt="vector"
-                class="absolute bottom-[43%] right-4 -z-10"
+                class="absolute bottom-[43%] right-4 "
             />
             <!-- Header Section -->
-            <div id="header-placeholder"></div>
-            <!-- Hero Section -->
-            <section class="max-w-container mx-auto">
+            <header class="relative z-[99]">
+                <div class="max-w-container mx-auto px-4">
+                    <div class="flex justify-between items-center">
+                        <div class="log">
+                            <img src="assets/images/logo.png" alt="logo" />
+                        </div>
+                        <ul
+                            class="menu lg:flex hidden justify-between items-center gap-8 text-white"
+                        >
+                            <li>
+                                <a href="index.html" class="cursor-pointer"
+                                    >Home</a
+                                >
+                            </li>
+                            <li><a href="about.html">About</a></li>
+                            <div class="relative group cursor-pointer">
+                                <li class="flex items-center gap-2">
+                                    <a href="department.html"
+                                        >Department & Service</a
+                                    >
+                                    <svg
+                                        width="14"
+                                        height="14"
+                                        viewBox="0 0 14 14"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M2 5L7 10L12 5"
+                                            stroke="white"
+                                            stroke-width="1.5"
+                                        />
+                                    </svg>
+                                </li>
+                                <div
+                                    class="absolute top-[2rem] left-0 w-64 px-3 py-6 space-y-2 hidden group-hover:flex group-hover:flex-col shadow-lg z-10 bg-white opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out transform origin-top"
+                                >
+                                    <a
+                                        href="chairmans-message.html"
+                                        class="block px-4 py-2 relative after:content-[''] text-primary after:absolute after:left-4 after:bottom-0 after:w-0 after:h-0.5 after:bg-slate-900 after:transition-all after:duration-300 hover:after:w-14"
+                                    >
+                                        Orthopedic
+                                    </a>
+                                    <a
+                                        href="services.html"
+                                        class="block px-4 py-2 relative after:content-[''] text-primary after:absolute after:left-4 after:bottom-0 after:w-0 after:h-0.5 after:bg-slate-900 after:transition-all after:duration-300 hover:after:w-14"
+                                    >
+                                        Cardiology
+                                    </a>
+                                </div>
+                            </div>
+                            <li><a href="blog.html">Blogs</a></li>
+                        </ul>
+
+                        <div class="lg:flex hidden justify-between gap-8">
+                            <a href="contact.html"
+                                ><button
+                                    class="text-white text-sm font-medium border-white  hover:text-black hover:bg-white transition-all duration-300 ease-in-out border rounded-md px-6 py-2 cursor-pointer"
+                                >
+                                    CONTACT
+                                </button>
+                            </a>
+                            <a href="">
+                                <button
+                                    class="rounded-md text-sm font-medium px-6 py-2 cursor-pointer bg-white hover:bg-transparent hover:text-white border-white border transition-all duration-300 ease-in-out"
+                                >
+                                    GET STARTED
+                                </button>
+                            </a>
+                        </div>
+                        <!-- Hamburger Menu Button -->
+                        <button
+                            id="menu-button"
+                            class="lg:hidden flex items-center justify-center w-12 h-12 rounded-full border border-white  relative z-50"
+                        >
+                            <svg
+                                width="20"
+                                height="18"
+                                viewBox="0 0 20 18"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M19.75 0.333332H0.25V2.5H19.75V0.333332ZM19.75 7.91667H6.25V10.0833H19.75V7.91667ZM19.75 15.5H0.25V17.6667H19.75V15.5Z"
+                                    fill="white"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- Off-canvas Menu -->
                 <div
-                    class="grid md:grid-cols-2 grid-cols-1 items-center gap-20"
+                    id="offcanvas-menu"
+                    class="fixed z-[99] h-screen top-0 left-0 w-[100%] rounded-bl-[7rem] bg-gray-50 shadow-lg transform translate-x-full transition-transform duration-300"
+                >
+                    <div class="bg-[#4534AF] h-screen p-6">
+                        <button
+                            id="close-menu"
+                            class="text-primary text-xl float-right mb-4"
+                        >
+                            <i class="fa-solid fa-xmark text-white"></i>
+                        </button>
+                        <ul class="space-y-4">
+                            <li>
+                                <a href="index.html" class="text-white">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html" class="text-white"
+                                    >About</a
+                                >
+                            </li>
+                            <li>
+                                <a href="department.html" class="text-white"
+                                    >Department & Service</a
+                                >
+                            </li>
+                            <li>
+                                <a href="blog.html" class="text-white">Blogs</a>
+                            </li>
+                        </ul>
+                        <div class="mt-6 space-y-4">
+                            <a href="contact.html"
+                                ><button
+                                    class="text-white w-full text-sm font-medium border-white border rounded-md px-6 py-2 cursor-pointer mb-4"
+                                >
+                                    CONTACT
+                                </button>
+                            </a>
+                            <a href="#">
+                                <button
+                                    class="rounded-md w-full text-sm font-medium px-6 py-2 cursor-pointer bg-white "
+                                >
+                                    GET STARTED
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- Hero Section -->
+            <section class="max-w-container mx-auto px-4 py-16 xl:py-0 relative z-30">
+                <div
+                    class="grid lg:grid-cols-2 grid-cols-1 items-center xl:gap-20 gap-10"
                 >
                     <div class="left-side-content">
                         <h1
-                            class="text-[56px] font-bold leading-snug mb-8 text-white"
+                            class="xl:text-[56px] text-4xl font-bold leading-snug mb-8 text-white"
                         >
                             Bombay Maternity & Surgical Hospital
                         </h1>
                         <p
-                            class="text-xl leading-normal font-normal border-l-4 border-[#FFD539] ps-8 pe-32 mb-16 text-white"
+                            class="text-xl leading-normal font-normal border-l-4 border-[#FFD539] ps-8 pe-0 xl:pe-32 mb-16 text-white"
                         >
                             A hospital is a health care institution providing
                             patient treatment with specialized medical and
@@ -134,37 +282,20 @@
                         </p>
                         <a href="#">
                             <button
-                                class="flex items-center gap-4 rounded-sm font-medium text-md bg-white hover:text-white hover:bg-[#ED3237] border-r-4 border-[#FFD539] px-6 py-3"
+                                class="flex items-center gap-4 rounded-sm font-medium text-md bg-white hover:text-white hover:bg-[#ED3237] border-r-4 border-[#FFD539] transition-all duration-200 ease-in-out px-6 py-3"
                             >
-                                GET STARTED<svg
-                                    width="18"
-                                    height="14"
-                                    viewBox="0 0 18 14"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M1 7H17"
-                                        stroke="#373435"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                    />
-                                    <path
-                                        d="M11 1L17 7L11 13"
-                                        stroke="#373435"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
+                                GET STARTED<i class="fa-solid fa-arrow-right"></i>
                             </button>
                         </a>
                     </div>
                     <div class="right-side-content">
-                        <div class="max-w-[685px] max-h-[769px] clip-path-left">
+                        <div
+                            class="lg:max-w-[685px] w-full max-h-[769px] clip-path-left"
+                        >
                             <img
                                 src="assets/images/hero-banner.png"
                                 alt="banner"
+                                class="w-full"
                             />
                         </div>
                     </div>
@@ -172,12 +303,12 @@
             </section>
         </div>
         <!-- About Section -->
-        <section class="relative max-2xl-container mx-auto py-24">
+        <section class="relative max-2xl-container mx-auto py-24 px-4">
             <!-- vector 7 -->
             <img
                 src="assets/images/vector7.png"
                 alt="vector"
-                class="absolute top-0 left-0"
+                class="absolute top-0 left-0 -z-10"
             />
             <!-- vector 8 -->
             <img
@@ -187,24 +318,25 @@
             />
             <div class="max-w-container mx-auto">
                 <div
-                    class="grid md:grid-cols-2 grid-cols-1 items-center gap-24"
+                    class="grid xl:grid-cols-2 grid-cols-1 items-center gap-24"
                 >
                     <!-- left side -->
-                    <div class="relative flex justify-end">
-                        <div
-                            class="max-w-[526px] max-h-[583px] clip-path-right"
-                        >
+                    <div class="relative flex justify-end order-2 xl:order-1">
+                        <div class="md:w-[526px] md:h-[583px] w-[300px]">
                             <img src="assets/images/about1.png" alt="about" />
-                        </div>
-                        <!-- position image -->
-                        <div
-                            class="absolute left-0 top-1/4 max-w-[328px] max-h-[380px]"
-                        >
-                            <img src="assets/images/about2.png" alt="about" />
+                            <!-- position image -->
+                            <div
+                                class="absolute xl:left-0 lg:left-1/3 left-0 top-1/4 md:w-[328px] md:h-[380px] w-[200px]"
+                            >
+                                <img
+                                    src="assets/images/about2.png"
+                                    alt="about"
+                                />
+                            </div>
                         </div>
                     </div>
-                    <!-- left side -->
-                    <div class="ps-14">
+                    <!-- right side -->
+                    <div class="lg:ps-14 order-1 xl:order-2">
                         <h2 class="text-[44px] text-primary font-semibold mb-6">
                             Who we are
                         </h2>
@@ -226,27 +358,7 @@
                             <button
                                 class="flex items-center gap-4 rounded-sm font-medium text-md transition-all duration-200 ease-in-out hover:bg-white text-white hover:text-black bg-[#ED3237] border-r-4 border-[#FFD539] px-6 py-3"
                             >
-                                GET STARTED<svg
-                                    width="18"
-                                    height="14"
-                                    viewBox="0 0 18 14"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M1 7H17"
-                                        stroke="#373435"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                    />
-                                    <path
-                                        d="M11 1L17 7L11 13"
-                                        stroke="#373435"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
+                                GET STARTED<i class="fa-solid fa-arrow-right"></i>
                             </button>
                         </a>
                     </div>
@@ -255,14 +367,14 @@
         </section>
         <!-- Our Promise -->
         <section
-            class="relative max-2xl-container mx-auto pt-44 pb-24 bg-no-repeat bg-cover"
+            class="relative max-2xl-container mx-auto lg:pt-44 pt-12 pb-24 bg-no-repeat bg-cover px-4"
             style="background-image: url('assets/images/ourpromise-bg.png')"
         >
             <!-- vector 9 -->
             <img
                 src="assets/images/vector9.png"
                 alt="vector"
-                class="absolute -top-20 right-0"
+                class="absolute -top-20 right-0 -z-10"
             />
             <!-- vector 10 -->
             <img
@@ -277,15 +389,17 @@
                 class="absolute bottom-0 left-0"
             />
             <div
-                class="max-w-container mx-auto grid md:grid-cols-2 grid-cols-1 items-center gap-24"
+                class="max-w-container mx-auto grid lg:grid-cols-2 grid-cols-1 items-center gap-24"
             >
                 <!-- left side -->
                 <div class="flex flex-wrap gap-8">
-                    <h2 class="text-[44px] text-primary font-semibold mb-6">
+                    <h2
+                        class="lg:text-[44px] text-4xl text-primary font-semibold mb-6"
+                    >
                         Our Promises
                     </h2>
                     <!-- list -->
-                    <div class="flex items-center gap-8">
+                    <div class="flex items-start lg:items-center gap-8">
                         <div class="bg-red-100 p-5 rounded-full">
                             <svg
                                 width="28"
@@ -353,7 +467,7 @@
                             <h4 class="font-semibold text-[20px] mb-2">
                                 Great Infrastructure
                             </h4>
-                            <p class="text-primary pe-32">
+                            <p class="text-primary xl:pe-32">
                                 Lorem Ipsum is simply dummy text of the printing
                                 industry. It has been the industry's standard
                                 dummy text
@@ -381,7 +495,7 @@
                             >
                                 Qualified Doctors
                             </h4>
-                            <p class="text-primary pe-32">
+                            <p class="text-primary xl:pe-32">
                                 Lorem Ipsum is simply dummy text of the printing
                                 industry. It has been the industry's standard
                                 dummy text
@@ -409,7 +523,7 @@
                             >
                                 Emergency Departments
                             </h4>
-                            <p class="text-primary pe-32">
+                            <p class="text-primary xl:pe-32">
                                 Lorem Ipsum is simply dummy text of the printing
                                 industry. It has been the industry's standard
                                 dummy text
@@ -418,13 +532,17 @@
                     </div>
                 </div>
                 <!-- right side -->
-                <div class="max-w-[685px] max-h-[577px] clip-path-left">
-                    <img src="assets/images/ourPromise.png" alt="banner" />
+                <div class="lg:max-w-[685px] max-h-[577px] clip-path-left">
+                    <img
+                        src="assets/images/ourPromise.png"
+                        alt="banner"
+                        class="w-full"
+                    />
                 </div>
             </div>
         </section>
         <!-- Department And Services -->
-        <section class="max-2xl-container mx-auto py-16 px-4">
+        <section class="max-w-container mx-auto py-16 px-4">
             <h2 class="text-4xl font-semibold text-center mb-6">
                 Department and Services
             </h2>
@@ -437,11 +555,11 @@
                         class="w-full max-h-[203px] mb-4 clip-path-right"
                     />
                     <h3 class="text-xl text-primary font-semibold mb-2 px-1">
-                        General Surgery
+                        General Surgery hel
                     </h3>
                     <p class="text-primary px-1">
                         Lorem Ipsum is simply dummy text of the printing
-                        industry. It has been the industry's standard dummy text
+                        industry. It has been the industry's standard dummy next
                     </p>
                 </div>
                 <!-- Slide 2 -->
@@ -529,9 +647,10 @@
                 </div>
             </div>
         </section>
+
         <!-- partners section -->
         <section
-            class="max-2xl-container mx-auto border-t border-gray-300 py-16"
+            class="max-2xl-container mx-auto border-t border-gray-300 py-16 px-4"
         >
             <div class="text-center">
                 <h4
@@ -540,7 +659,9 @@
                     PARTNERS
                 </h4>
             </div>
-            <div class="grid grid-cols-8 justify-between items-center py-6">
+            <div
+                class="grid xl:grid-cols-8 lg:grid-cols-6 md:grid-cols-3 grid-cols-2 justify-between items-center py-6"
+            >
                 <div class="flex justify-center">
                     <img
                         src="assets/images/patner1.png"
@@ -620,17 +741,23 @@
             <img
                 src="assets/images/vector14.png"
                 alt="vector"
-                class="absolute top-14 right-0"
+                class="absolute top-14 right-0 -z-10"
             />
-            <div class="grid grid-cols-8 items-center">
+            <div
+                class="grid grid-cols-1 lg:grid-cols-8 items-center gap-6 lg:gap-4"
+            >
                 <!-- Left side -->
-                <div class="col-span-3 px-14">
+                <div
+                    class="lg:col-span-3 px-6 xl:px-14 text-center lg:text-left"
+                >
                     <h2
-                        class="text-[44px] text-white font-semibold mb-6 md:w-2/3"
+                        class="text-3xl lg:text-[44px] text-white font-semibold mb-4 lg:mb-6"
                     >
                         Your Health is Our Priority
                     </h2>
-                    <p class="text-lg text-white mb-12 leading-relaxed pe-12">
+                    <p
+                        class="text-lg text-white mb-12 leading-relaxed xl:pe-12"
+                    >
                         Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. It has been the industry's
                         standard dummy text ever since the 1500s, when an
@@ -638,12 +765,12 @@
                     </p>
                 </div>
                 <!-- Right side -->
-                <div class="col-span-5">
+                <div class="lg:col-span-5">
                     <div
                         class="priority-slider-wrapper overflow-hidden relative"
                     >
                         <div
-                            class="priority-cards grid grid-cols-3 gap-6 transition-transform duration-500"
+                            class="priority-cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 transition-transform duration-500"
                         >
                             <div class="priority-card bg-white p-2">
                                 <div class="flex items-center gap-4">
@@ -961,17 +1088,18 @@
                 <h2 class="text-4xl font-semibold text-center mb-8">
                     Latest Insights and Research
                 </h2>
-                <div class="research grid grid-cols-4">
+                <div class="research ">
                     <!-- card 1 -->
                     <div
-                        class="hover:bg-white hover:shadow-xl transition-all duration-300 ease-in-out p-6"
+                        class="hover:bg-white hover:shadow-xl transition-all duration-300 ease-in-out p-6 mx-4"
                     >
                         <div
-                            class="max-w-[328px] max-h-[261px] mb-4 clip-path-right"
+                            class="lg:max-w-[328px] w-full max-h-[261px] mb-4 clip-path-right"
                         >
                             <img
                                 src="assets/images/research1.png"
                                 alt="Research"
+                                class="w-full"
                             />
                         </div>
                         <p class="text-secondary text-sm mb-4">
@@ -1011,14 +1139,15 @@
                     </div>
                     <!-- card 2 -->
                     <div
-                        class="hover:bg-white hover:shadow-xl transition-all duration-300 ease-in-out p-6"
+                        class="hover:bg-white hover:shadow-xl transition-all duration-300 ease-in-out p-6 mx-4"
                     >
                         <div
-                            class="max-w-[328px] max-h-[261px] mb-4 clip-path-right"
+                            class="lg:max-w-[328px] w-full max-h-[261px] mb-4 clip-path-right"
                         >
                             <img
                                 src="assets/images/research2.png"
                                 alt="Research"
+                                class="w-full"
                             />
                         </div>
                         <p class="text-secondary text-sm mb-4">
@@ -1058,14 +1187,15 @@
                     </div>
                     <!-- card 3 -->
                     <div
-                        class="hover:bg-white hover:shadow-xl transition-all duration-300 ease-in-out p-6"
+                        class="hover:bg-white hover:shadow-xl transition-all duration-300 ease-in-out p-6 mx-4"
                     >
                         <div
-                            class="max-w-[328px] max-h-[261px] mb-4 clip-path-right"
+                            class="lg:max-w-[328px] w-full max-h-[261px] mb-4 clip-path-right"
                         >
                             <img
                                 src="assets/images/research3.png"
                                 alt="Research"
+                                class="w-full"
                             />
                         </div>
                         <p class="text-secondary text-sm mb-4">
@@ -1105,14 +1235,207 @@
                     </div>
                     <!-- card 4 -->
                     <div
-                        class="hover:bg-white hover:shadow-xl transition-all duration-300 ease-in-out p-6"
+                        class="hover:bg-white hover:shadow-xl transition-all duration-300 ease-in-out p-6 mx-4"
                     >
                         <div
-                            class="max-w-[328px] max-h-[261px] mb-4 clip-path-right"
+                            class="lg:max-w-[328px] w-full max-h-[261px] mb-4 clip-path-right"
                         >
                             <img
                                 src="assets/images/research4.png"
                                 alt="Research"
+                                class="w-full"
+                            />
+                        </div>
+                        <p class="text-secondary text-sm mb-4">
+                            <span class="font-medium">22 Feb, 2022</span>
+                            <span class="font-light">by Mark Devid</span>
+                        </p>
+                        <p class="text-primary font-medium md:w-2/3 mb-4">
+                            It is a long established fact that a reader will be
+                            distracted.
+                        </p>
+                        <a
+                            href="#"
+                            class="cursor-pointer text-sm font-medium tracking-widest text-[#ED3237] border-b border-[#ED3237] pb-1 inline-block"
+                            ><span class="flex items-center gap-2"
+                                >READ MORE
+                                <svg
+                                    width="14"
+                                    height="9"
+                                    viewBox="0 0 14 9"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M0.5 4.5H12.5"
+                                        stroke="#ED3237"
+                                        stroke-linecap="round"
+                                    />
+                                    <path
+                                        d="M8.83333 0.5L12.8333 4.5L8.83333 8.5"
+                                        stroke="#ED3237"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                    <!-- card 1 -->
+                    <div
+                        class="hover:bg-white hover:shadow-xl transition-all duration-300 ease-in-out p-6 mx-4"
+                    >
+                        <div
+                            class="lg:max-w-[328px] w-full max-h-[261px] mb-4 clip-path-right"
+                        >
+                            <img
+                                src="assets/images/research1.png"
+                                alt="Research"
+                                class="w-full"
+                            />
+                        </div>
+                        <p class="text-secondary text-sm mb-4">
+                            <span class="font-medium">22 Feb, 2022</span>
+                            <span class="font-light">by Mark Devid</span>
+                        </p>
+                        <p class="text-primary font-medium md:w-2/3 mb-4">
+                            It is a long established fact that a reader will be
+                            distracted.
+                        </p>
+                        <a
+                            href="#"
+                            class="cursor-pointer text-sm font-medium tracking-widest text-[#ED3237] border-b border-[#ED3237] pb-1 inline-block"
+                            ><span class="flex items-center gap-2"
+                                >READ MORE
+                                <svg
+                                    width="14"
+                                    height="9"
+                                    viewBox="0 0 14 9"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M0.5 4.5H12.5"
+                                        stroke="#ED3237"
+                                        stroke-linecap="round"
+                                    />
+                                    <path
+                                        d="M8.83333 0.5L12.8333 4.5L8.83333 8.5"
+                                        stroke="#ED3237"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                    <!-- card 2 -->
+                    <div
+                        class="hover:bg-white hover:shadow-xl transition-all duration-300 ease-in-out p-6 mx-4"
+                    >
+                        <div
+                            class="lg:max-w-[328px] w-full max-h-[261px] mb-4 clip-path-right"
+                        >
+                            <img
+                                src="assets/images/research2.png"
+                                alt="Research"
+                                class="w-full"
+                            />
+                        </div>
+                        <p class="text-secondary text-sm mb-4">
+                            <span class="font-medium">22 Feb, 2022</span>
+                            <span class="font-light">by Mark Devid</span>
+                        </p>
+                        <p class="text-primary font-medium md:w-2/3 mb-4">
+                            It is a long established fact that a reader will be
+                            distracted.
+                        </p>
+                        <a
+                            href="#"
+                            class="cursor-pointer text-sm font-medium tracking-widest text-[#ED3237] border-b border-[#ED3237] pb-1 inline-block"
+                            ><span class="flex items-center gap-2"
+                                >READ MORE
+                                <svg
+                                    width="14"
+                                    height="9"
+                                    viewBox="0 0 14 9"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M0.5 4.5H12.5"
+                                        stroke="#ED3237"
+                                        stroke-linecap="round"
+                                    />
+                                    <path
+                                        d="M8.83333 0.5L12.8333 4.5L8.83333 8.5"
+                                        stroke="#ED3237"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                    <!-- card 3 -->
+                    <div
+                        class="hover:bg-white hover:shadow-xl transition-all duration-300 ease-in-out p-6 mx-4"
+                    >
+                        <div
+                            class="lg:max-w-[328px] w-full max-h-[261px] mb-4 clip-path-right"
+                        >
+                            <img
+                                src="assets/images/research3.png"
+                                alt="Research"
+                                class="w-full"
+                            />
+                        </div>
+                        <p class="text-secondary text-sm mb-4">
+                            <span class="font-medium">22 Feb, 2022</span>
+                            <span class="font-light">by Mark Devid</span>
+                        </p>
+                        <p class="text-primary font-medium md:w-2/3 mb-4">
+                            It is a long established fact that a reader will be
+                            distracted.
+                        </p>
+                        <a
+                            href="#"
+                            class="cursor-pointer text-sm font-medium tracking-widest text-[#ED3237] border-b border-[#ED3237] pb-1 inline-block"
+                            ><span class="flex items-center gap-2"
+                                >READ MORE
+                                <svg
+                                    width="14"
+                                    height="9"
+                                    viewBox="0 0 14 9"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M0.5 4.5H12.5"
+                                        stroke="#ED3237"
+                                        stroke-linecap="round"
+                                    />
+                                    <path
+                                        d="M8.83333 0.5L12.8333 4.5L8.83333 8.5"
+                                        stroke="#ED3237"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                    <!-- card 4 -->
+                    <div
+                        class="hover:bg-white hover:shadow-xl transition-all duration-300 ease-in-out p-6 mx-4"
+                    >
+                        <div
+                            class="lg:max-w-[328px] w-full max-h-[261px] mb-4 clip-path-right"
+                        >
+                            <img
+                                src="assets/images/research4.png"
+                                alt="Research"
+                                class="w-full"
                             />
                         </div>
                         <p class="text-secondary text-sm mb-4">
@@ -1160,6 +1483,25 @@
         >
             <div id="footer-placeholder"></div>
         </footer>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const menuButton = document.getElementById("menu-button");
+                const closeMenu = document.getElementById("close-menu");
+                const offcanvasMenu = document.getElementById("offcanvas-menu");
+
+                // Toggle menu open
+                menuButton.addEventListener("click", () => {
+                    offcanvasMenu.classList.remove("translate-x-full"); // Remove the class to show the menu
+                    offcanvasMenu.classList.add("translate-x-0"); // Add this class for visibility
+                });
+
+                // Toggle menu close
+                closeMenu.addEventListener("click", () => {
+                    offcanvasMenu.classList.remove("translate-x-0"); // Remove the visible class
+                    offcanvasMenu.classList.add("translate-x-full"); // Add this class to hide the menu
+                });
+            });
+        </script>
     </body>
     <!-- Slick JS -->
     <script

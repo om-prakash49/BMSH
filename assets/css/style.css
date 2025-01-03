@@ -1,6 +1,7 @@
 .max-2xl-container {
-    max-width: 1620px !important;
+    max-width: 1680px !important;
 }
+
 
 /* CSS clip-path for a similar shape */
 .clip-path-right {
@@ -23,9 +24,18 @@
   left: -40px; /* Adjust this value to move the button inside or outside */
 }
 
+.slick-prev:before {
+  color: black;
+}
+.slick-next:before {
+  color: black;
+}
+
 .slick-next {
   right: -40px; /* Adjust this value to move the button inside or outside */
 }
+
+
 
 .priority-slider-wrapper {
   overflow: hidden !important;
@@ -38,24 +48,40 @@
   flex-wrap: nowrap !important;
 }
 
-.research {
-  overflow: hidden;
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-.research {
-  overflow: hidden; /* Ensures content outside the container is hidden */
-  display: flex;
-  flex-wrap: nowrap; /* Prevents wrapping of slides */
-  position: relative; /* To keep child elements positioned relative to the container */
-}
-
-.research > div {
-  flex: 0 0 calc(25% - 16px); /* Each card takes up 25% of the container width */
-  margin-right: 16px; /* Adjust for spacing between cards */
+.research .slick-slide {
+  padding: 1rem; /* Add spacing between slides */
   box-sizing: border-box;
 }
+
+.research .slick-slide div {
+  max-width: 300px; /* Limit card width */
+  text-align: left; /* Align content to the left */
+}
+
+.research img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.research p {
+  line-height: 1.5;
+  margin: 0.5rem 0; /* Proper spacing between text elements */
+}
+
+.research a {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ED3237;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+
+
+
+
 
 
 

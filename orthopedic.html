@@ -66,6 +66,7 @@
         <script src="assets/js/about.js"></script>
         <script src="assets/js/research.js"></script>
         <script src="assets/js/app.js"></script>
+        <script src="assets/js/service.js"></script>
 
         <!-- Custom Styles -->
         <link rel="stylesheet" href="assets/css/style.css" />
@@ -109,10 +110,145 @@
                 class="absolute bottom-1/2 right-0"
             />
             <!-- Header Section -->
-            <div id="header-placeholder"></div>
+            <!-- Header Section -->
+            <header class="relative z-10">
+                <div class="max-w-container mx-auto px-4">
+                    <div class="flex justify-between items-center">
+                        <div class="log">
+                            <img src="assets/images/logo.png" alt="logo" />
+                        </div>
+                        <ul
+                        class="menu lg:flex hidden justify-between items-center gap-8 text-white"
+                    >
+                        <li>
+                            <a href="index.html" class="cursor-pointer">Home</a>
+                        </li>
+                        <li><a href="about.html">About</a></li>
+                        <div class="relative group cursor-pointer">
+                            <li class="flex items-center gap-2">
+                                <a href="department.html">Department & Service</a>
+                                <svg
+                                    width="14"
+                                    height="14"
+                                    viewBox="0 0 14 14"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M2 5L7 10L12 5"
+                                        stroke="white"
+                                        stroke-width="1.5"
+                                    />
+                                </svg>
+                            </li>
+                            <div
+                                class="absolute top-[2rem] left-0 w-64 px-3 py-6 space-y-2 hidden group-hover:flex group-hover:flex-col shadow-lg z-10 bg-white opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out transform origin-top"
+                            >
+                                <a
+                                    href="chairmans-message.html"
+                                    class="block px-4 py-2 relative after:content-[''] text-primary after:absolute after:left-4 after:bottom-0 after:w-0 after:h-0.5 after:bg-slate-900 after:transition-all after:duration-300 hover:after:w-14"
+                                >
+                                    Orthopedic
+                                </a>
+                                <a
+                                    href="services.html"
+                                    class="block px-4 py-2 relative after:content-[''] text-primary after:absolute after:left-4 after:bottom-0 after:w-0 after:h-0.5 after:bg-slate-900 after:transition-all after:duration-300 hover:after:w-14"
+                                >
+                                    Cardiology
+                                </a>
+                            </div>
+                        </div>
+                        <li><a href="blog.html">Blogs</a></li>
+                    </ul>
+                    
+                        <div class="lg:flex hidden justify-between gap-8">
+                            <a href="contact.html"
+                                ><button
+                                    class="text-white text-sm font-medium border-white border rounded-md px-6 py-2 cursor-pointer"
+                                >
+                                    CONTACT
+                                </button>
+                            </a>
+                            <a href="">
+                                <button
+                                    class="rounded-md text-sm font-medium px-6 py-2 cursor-pointer bg-white"
+                                >
+                                    GET STARTED
+                                </button>
+                            </a>
+                        </div>
+                        <!-- Hamburger Menu Button -->
+                        <button
+                            id="menu-button"
+                            class="lg:hidden flex items-center justify-center w-12 h-12 rounded-full border border-white relative z-50"
+                        >
+                            <svg
+                                width="20"
+                                height="18"
+                                viewBox="0 0 20 18"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M19.75 0.333332H0.25V2.5H19.75V0.333332ZM19.75 7.91667H6.25V10.0833H19.75V7.91667ZM19.75 15.5H0.25V17.6667H19.75V15.5Z"
+                                    fill="white"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- Off-canvas Menu -->
+                <div
+                    id="offcanvas-menu"
+                    class="fixed z-[99] h-screen top-0 left-0 w-[100%] rounded-bl-[7rem] bg-gray-50 shadow-lg transform translate-x-full transition-transform duration-300"
+                >
+                    <div class="bg-[#4534AF] h-screen p-6">
+                        <button
+                            id="close-menu"
+                            class="text-primary text-xl float-right mb-4"
+                        >
+                            <i class="fa-solid fa-xmark text-white"></i>
+                        </button>
+                        <ul class="space-y-4">
+                            <li>
+                                <a href="index.html" class="text-white">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html" class="text-white"
+                                    >About</a
+                                >
+                            </li>
+                            <li>
+                                <a href="department.html" class="text-white"
+                                    >Department & Service</a
+                                >
+                            </li>
+                            <li>
+                                <a href="blog.html" class="text-white">Blogs</a>
+                            </li>
+                        </ul>
+                        <div class="mt-6 space-y-4">
+                            <a href="contact.html"
+                                ><button
+                                    class="text-white w-full text-sm font-medium border-white border rounded-md px-6 py-2 cursor-pointer mb-4"
+                                >
+                                    CONTACT
+                                </button>
+                            </a>
+                            <a href="#">
+                                <button
+                                    class="rounded-md w-full text-sm font-medium px-6 py-2 cursor-pointer bg-white"
+                                >
+                                    GET STARTED
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
             <!-- breadcrumb content-->
-            <div class="text-center pt-12 pb-36">
-                <h2 class="font-semibold text-white text-[44px]">
+            <div class="text-center pt-12 pb-[18.5rem]">
+                <h2 class="font-semibold text-white lg:text-[44px] text-4xl pb-2">
                     Orthopedic & Joint Replace
                 </h2>
                 <div class="flex items-center justify-center gap-2">
@@ -136,25 +272,353 @@
                         aria-disabled="true"
                         class="text-gray-400"
                     >
-                    Service</a
+                        Service</a
                     >
                 </div>
             </div>
         </div>
         <!-- Cards -->
-        <div class="max-2xl-container mx-auto pb-24 bg-gray-50">
-            <div class="max-w-container mx-auto">
-                
+        <div class="max-2xl-container mx-auto bg-gray-50">
+            <div class="max-w-container mx-auto border-b border-gray-200 px-4">
+                <div class="relative max-w-6xl mx-auto -mt-56 pb-12">
+                    <div
+                        style="
+                            clip-path: polygon(
+                                0% 0%,
+                                100% 0%,
+                                100% 100%,
+                                100% 100%,
+                                24% 100%,
+                                0% 76
+                            );
+                        "
+                    >
+                        <img
+                            src="assets/images/ortho/ortho1.png"
+                            alt="ortho"
+                            class="w-full max-h-[560px]"
+                        />
+                    </div>
+                    <h5 class="text-primary font-semibold lg:text-3xl text-2xl py-5">
+                        Lorem Ipsum is simply dummy text of he printing
+                        industry.
+                    </h5>
+                    <p class="text-lg lg:pe-16 text-primary lg:leading-loose">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. It has been the industry's
+                        standard dummy text ever since the 1500s, when an
+                        unknown printer took a galley of type and scrambled it
+                        to make a type specimen book. It has survived not only
+                        five centuries, but also the leap into electronic
+                        typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset
+                        sheets containing Lorem Ipsum passages, and more
+                        recently with desktop publishing software like Aldus
+                        PageMaker including versions of Lorem Ipsum.
+                    </p>
+                    <ul class="py-5 text-primary text-lg">
+                        <li class="py-2 flex items-center gap-3">
+                            <span class="bg-[#ED3237] rounded-full p-1"></span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.
+                        </li>
+                        <li class="py-2 flex items-center gap-3">
+                            <span class="bg-[#ED3237] rounded-full p-1"></span
+                            >Suspendisse cursus urna at commodo blandit.
+                        </li>
+                        <li class="py-2 flex items-center gap-3">
+                            <span class="bg-[#ED3237] rounded-full p-1"></span
+                            >Sed fringilla felis a faucibus tempor.
+                        </li>
+                        <li class="py-2 flex items-center gap-3">
+                            <span class="bg-[#ED3237] rounded-full p-1"></span>
+                            Suspendisse porttitor mauris in felis venenatis,
+                            faucibus sagittis sapien egestas.
+                        </li>
+                    </ul>
+                    <p class="text-lg lg:pe-16 text-primary leading-looseh">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. It has been the industry's
+                        standard dummy text ever since the 1500s, when an
+                        unknown printer took a galley of type and scrambled it
+                        to make a type specimen book. It has survived not only
+                        five centuries, but also the leap into electronic
+                        typesetting, remaining essentially unchanged.
+                    </p>
+                    <div
+                        class="grid md:grid-cols-2 grid-cols-1 items-center lg:gap-16 gap-8 py-16"
+                    >
+                        <!-- left side -->
+                        <div class="relative flex justify-start">
+                            <div>
+                                <img
+                                    src="assets/images/ortho/ortho2.png"
+                                    alt="about"
+                                    class="md:max-w-[520px] w-full max-h-[440px]"
+                                />
+                            </div>
+                        </div>
+
+                        <!-- right side -->
+                        <div>
+                            <h2
+                                class="lg:text-[26px] text-2xl text-primary font-semibold mb-6"
+                            >
+                                Lorem Ipsum is simply dummy text of he printing
+                                industry.
+                            </h2>
+                            <p
+                                class="text-lg leading-normal font-normal text-primary"
+                            >
+                                Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry. Lorem Ipsum has been
+                                the industry's standard dummy text ever since
+                                the 1500s, when an unknown printer took a galley
+                                of type and scrambled it to make a type specimen
+                                book. It has survived not only five centuries,
+                                but also the leap into electronic typesetting,
+                                remaining essentially unchanged. It was
+                                popularised in the 1960s with the release of
+                                Letraset sheets containing Lorem Ipsum passages,
+                                It is a long established fact that a reader will
+                                be distracted by the readable content of a page
+                                when looking at its layout.
+                            </p>
+                        </div>
+                    </div>
+                    <p class="text-lg text-primary leading-looseh pb-12">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. It has been the industry's
+                        standard dummy text ever since the 1500s, when an
+                        unknown printer took a galley of type and scrambled it
+                        to make a type specimen book. It has survived not only
+                        five centuries, but also the leap into electronic
+                        typesetting, remaining essentially unchanged.
+                    </p>
+                    <h5 class="text-primary font-semibold lg:text-[26px] text-2xl py-5">
+                        Lorem Ipsum is simply dummy text of he printing
+                        industry.
+                    </h5>
+                    <p class="text-lg lg:pe-16 text-primary lg:leading-loose">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. It has been the industry's
+                        standard dummy text ever since the 1500s, when an
+                        unknown printer took a galley of type and scrambled it
+                        to make a type specimen book. It has survived not only
+                        five centuries, but also the leap into electronic
+                        typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset
+                        sheets containing Lorem Ipsum passages, and more
+                        recently with desktop publishing software like Aldus
+                        PageMaker including versions of Lorem Ipsum.
+                    </p>
+                    <ul class="py-5 text-primary text-lg">
+                        <li class="py-2 flex items-center gap-3">
+                            <span class="bg-[#ED3237] rounded-full p-1"></span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.
+                        </li>
+                        <li class="py-2 flex items-center gap-3">
+                            <span class="bg-[#ED3237] rounded-full p-1"></span
+                            >Suspendisse cursus urna at commodo blandit.
+                        </li>
+                        <li class="py-2 flex items-center gap-3">
+                            <span class="bg-[#ED3237] rounded-full p-1"></span
+                            >Sed fringilla felis a faucibus tempor.
+                        </li>
+                        <li class="py-2 flex items-center gap-3">
+                            <span class="bg-[#ED3237] rounded-full p-1"></span>
+                            Suspendisse porttitor mauris in felis venenatis,
+                            faucibus sagittis sapien egestas.
+                        </li>
+                    </ul>
+                    <p class="text-lg lg:pe-16 text-primary leading-looseh">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. It has been the industry's
+                        standard dummy text ever since the 1500s, when an
+                        unknown printer took a galley of type and scrambled it
+                        to make a type specimen book. It has survived not only
+                        five centuries, but also the leap into electronic
+                        typesetting, remaining essentially unchanged.
+                    </p>
+                    <div
+                        class="grid md:grid-cols-2 grid-cols-1 items-center gap-16 py-16"
+                    >
+                        <!-- left side -->
+                        <div>
+                            <h2
+                                class="lg:text-[26px] text-2xl text-primary font-semibold mb-6"
+                            >
+                                Lorem Ipsum generators the Internet tend to
+                                repeat predefined
+                            </h2>
+                            <p
+                                class="text-lg leading-normal font-normal text-primary"
+                            >
+                                It is a long established fact that a reader will
+                                be distracted by the readable content of a page
+                                when looking at its layout. The point of using
+                                Lorem Ipsum is that it has a more-or-less normal
+                                distribution of letters, as opposed to using
+                                'Content here, content here', making it look
+                                like readable English. Many desktop publishing
+                                packages and web page editors now use Lorem
+                                Ipsum as their default model text, and a search
+                                for 'lorem ipsum' will uncover many web sites
+                                still in their infancy. There are many
+                                variations of passages of Lorem Ipsum available,
+                                but the majority have suffered alteration in
+                                some form, randomised words which don't look
+                                even slightly believable.
+                            </p>
+                        </div>
+
+                        <!-- right side -->
+                        <div class="flex justify-start">
+                            <div>
+                                <img
+                                    src="assets/images/ortho/ortho3.png"
+                                    alt="about"
+                                    class="md:max-w-[520px] w-full max-h-[440px]"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <section class="max-2xl-container mx-auto pt-16 pb-20 px-4 bg-gray-50">
+            <h2 class="lg:text-4xl text-3xl font-semibold text-center mb-6">
+                Know more about other services
+            </h2>
+            <div class="multiple-items">
+                <!-- Slide 1 -->
+                <div class="bg-white shadow-md max-h-[380px] p-6 m-4">
+                    <img
+                        src="assets/images/service1.png"
+                        alt="General Surgery"
+                        class="w-full max-h-[203px] mb-4 clip-path-right"
+                    />
+                    <h3 class="text-xl text-primary font-semibold mb-2 px-1">
+                        General Surgery
+                    </h3>
+                    <p class="text-primary px-1">
+                        Lorem Ipsum is simply dummy text of the printing
+                        industry. It has been the industry's standard dummy text
+                    </p>
+                </div>
+                <!-- Slide 2 -->
+                <div
+                    class="bg-white text-primary shadow-md max-h-[380px] p-6 m-4"
+                >
+                    <img
+                        src="assets/images/service2.png"
+                        alt="General Surgery"
+                        class="w-full max-h-[203px] mb-4 clip-path-right"
+                    />
+                    <h3 class="text-xl font-semibold mb-2">
+                        Ear, Nose and Throat
+                    </h3>
+                    <p class="text-primary">
+                        Lorem Ipsum is simply dummy text of the printing
+                        industry. It has been the industry's standard dummy text
+                    </p>
+                </div>
+                <!-- Slide 3 -->
+                <div
+                    class="bg-white text-primary shadow-md max-h-[380px] p-6 m-4"
+                >
+                    <img
+                        src="assets/images/service3.png"
+                        alt="General Surgery"
+                        class="w-full max-h-[203px] mb-4 clip-path-right"
+                    />
+                    <h3 class="text-xl font-semibold mb-2">
+                        Obstetric & Gynecology
+                    </h3>
+                    <p class="text-primary">
+                        Lorem Ipsum is simply dummy text of the printing
+                        industry. It has been the industry's standard dummy text
+                    </p>
+                </div>
+                <!-- Slide 4 -->
+                <div
+                    class="bg-white text-primary shadow-md max-h-[380px] p-6 m-4"
+                >
+                    <img
+                        src="assets/images/service4.png"
+                        alt="General Surgery"
+                        class="w-full max-h-[203px] mb-4 clip-path-right"
+                    />
+                    <h3 class="text-xl font-semibold mb-2">
+                        Orthopedic & Joint Replace
+                    </h3>
+                    <p class="text-primary">
+                        Lorem Ipsum is simply dummy text of the printing
+                        industry. It has been the industry's standard dummy text
+                    </p>
+                </div>
+                <!-- Slide 3 -->
+                <div
+                    class="bg-white text-primary shadow-md max-h-[380px] p-6 m-4"
+                >
+                    <img
+                        src="assets/images/service3.png"
+                        alt="General Surgery"
+                        class="w-full max-h-[203px] mb-4 clip-path-right"
+                    />
+                    <h3 class="text-xl font-semibold mb-2">
+                        Obstetric & Gynecology
+                    </h3>
+                    <p class="text-primary">
+                        Lorem Ipsum is simply dummy text of the printing
+                        industry. It has been the industry's standard dummy text
+                    </p>
+                </div>
+                <!-- Slide 4 -->
+                <div class="bg-white shadow-md max-h-[380px] p-6 m-4">
+                    <img
+                        src="assets/images/service4.png"
+                        alt="General Surgery"
+                        class="w-full max-h-[203px] mb-4 clip-path-right"
+                    />
+                    <h3 class="text-xl text-primary font-semibold mb-2">
+                        Orthopedic & Joint Replace
+                    </h3>
+                    <p class="text-primary">
+                        Lorem Ipsum is simply dummy text of the printing
+                        industry. It has been the industry's standard dummy text
+                    </p>
+                </div>
+            </div>
+        </section>
         <!-- Footer -->
         <footer
-            class="relative max-2xl-container mx-auto pt-24 bg-no-repeat bg-cover"
+            class="relative max-2xl-container mx-auto pt-24 bg-no-repeat bg-cover bg-gray-50"
             style="background-image: url('assets/images/footer-bg.png')"
         >
             <div id="footer-placeholder"></div>
         </footer>
     </body>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuButton = document.getElementById("menu-button");
+            const closeMenu = document.getElementById("close-menu");
+            const offcanvasMenu = document.getElementById("offcanvas-menu");
+
+            // Toggle menu open
+            menuButton.addEventListener("click", () => {
+                offcanvasMenu.classList.remove("translate-x-full"); // Remove the class to show the menu
+                offcanvasMenu.classList.add("translate-x-0"); // Add this class for visibility
+            });
+
+            // Toggle menu close
+            closeMenu.addEventListener("click", () => {
+                offcanvasMenu.classList.remove("translate-x-0"); // Remove the visible class
+                offcanvasMenu.classList.add("translate-x-full"); // Add this class to hide the menu
+            });
+        });
+    </script>
     <!-- Slick JS -->
     <script
         type="text/javascript"

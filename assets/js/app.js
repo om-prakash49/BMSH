@@ -1,35 +1,27 @@
-// headerLoader.js
-function loadHeader() {
-    const headerPlaceholder = document.getElementById('header-placeholder');
-    if (headerPlaceholder) {
-        fetch('component/header.html')
-            .then(response => response.text())
+function loadComponent(placeholderId, componentPath) {
+    const placeholder = document.getElementById(placeholderId);
+    if (placeholder) {
+        fetch(componentPath)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Failed to load ${componentPath}: ${response.statusText}`);
+                }
+                return response.text();
+            })
             .then(data => {
-                headerPlaceholder.innerHTML = data;
+                placeholder.innerHTML = data;
             })
             .catch(error => {
-                console.error('Error loading the header:', error);
+                console.error(`Error loading ${componentPath}:`, error);
             });
+    } else {
+        console.warn(`Placeholder with ID "${placeholderId}" not found.`);
     }
 }
 
-// Call the function on page load
-window.addEventListener('DOMContentLoaded', loadHeader);
+// Call the function to load header and footer on page load
+window.addEventListener('DOMContentLoaded', () => {
+    loadComponent('header-placeholder', 'component/header.html');
+    loadComponent('footer-placeholder', 'component/footer.html');
+});
 
-// footerLoader.js
-function loadFooter() {
-    const footerPlaceholder = document.getElementById('footer-placeholder');
-    if (footerPlaceholder) {
-        fetch('component/footer.html')
-            .then(response => response.text())
-            .then(data => {
-                footerPlaceholder.innerHTML = data;
-            })
-            .catch(error => {
-                console.error('Error loading the footer:', error);
-            });
-    }
-}
-
-// Call the function on page load
-window.addEventListener('DOMContentLoaded', loadFooter);
