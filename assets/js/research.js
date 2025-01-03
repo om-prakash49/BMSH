@@ -34,3 +34,5 @@ document.addEventListener("DOMContentLoaded", () => {
     // Start the auto slider
     setInterval(autoSlide, 3000); // Slide every 3 seconds
 });
+
+
